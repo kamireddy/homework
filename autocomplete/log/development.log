@@ -1,0 +1,169 @@
+  [1m[35m (85.2ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (88.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7069819479878965215', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20170507123329)
+  [1m[35m (93.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `surname` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170507123329')[0m
+  [1m[35m (53.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-07 12:33:53', '2017-05-07 12:33:53')[0m
+  [1m[35m (44.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7069819479878965215')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Kevon', 'Kihn', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (46.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Demario', 'Gorczany', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (36.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Adrianna', 'Koss', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (37.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Lawrence', 'Rath', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (37.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Roslyn', 'Kutch', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (37.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Dorcas', 'Schaefer', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (36.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Krystel', 'Hansen', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Randy', 'Abernathy', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (37.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Dominique', 'Mosciski', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (36.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Lukas', 'Cronin', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Filiberto', 'Stokes', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (46.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Ayla', 'Nicolas', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (44.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Nora', 'Aufderhar', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (47.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Yazmin', 'Borer', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (45.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Amir', 'Schaefer', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (47.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Cristal', 'Leuschke', '2017-05-07 12:38:08', '2017-05-07 12:38:08')[0m
+  [1m[35m (45.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Rafaela', 'Klein', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (46.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Jettie', 'Johns', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (46.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Tre', 'Yost', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (45.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Norwood', 'Stracke', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (54.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Lincoln', 'Cole', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Graciela', 'Pollich', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Judy', 'McCullough', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Bertha', 'Gerlach', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Thora', 'Paucek', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Alfredo', 'Gorczany', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Kyleigh', 'Pagac', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Keith', 'Bauch', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Brigitte', 'Stanton', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (37.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Sigmund', 'Bogisich', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (37.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Malachi', 'Hansen', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Kianna', 'Kuhn', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Karen', 'VonRueden', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Ricky', 'Beer', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Neha', 'Brekke', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Caitlyn', 'Feil', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Barry', 'Welch', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Chloe', 'Harvey', '2017-05-07 12:38:09', '2017-05-07 12:38:09')[0m
+  [1m[35m (38.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Kira', 'Crooks', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (38.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Ramon', 'Lowe', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Arden', 'Predovic', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (38.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Guy', 'Greenfelder', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (38.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Felton', 'Rempel', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (47.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Frankie', 'Keeling', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (47.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Maryse', 'Treutel', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (47.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Gordon', 'Bosco', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (47.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Gene', 'Rogahn', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (46.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Berneice', 'Waelchi', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (46.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Milford', 'Aufderhar', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (47.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `surname`, `created_at`, `updated_at`) VALUES ('Stanley', 'Predovic', '2017-05-07 12:38:10', '2017-05-07 12:38:10')[0m
+  [1m[35m (47.2ms)[0m  [1m[35mCOMMIT[0m
